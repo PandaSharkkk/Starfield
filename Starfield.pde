@@ -116,7 +116,7 @@ void mousePressed() {
     garvin[i] = new Particle(mouseX, mouseY);
   }
   for (int i = 0; i < 5; i++) {
-    if (garvin[i].myX - 30 < mouseX && mouseX < garvin[i].myX + 30 && garvin[i].myWidth < 100) {
+    if (garvin[i].myX - 30 < mouseX && mouseX < garvin[i].myX + 30 && garvin[i].myY - 30 < mouseY && mouseY < garvin[i].myY + 30 &&garvin[i].myWidth < 100) {
       garvin[i].myY = 1000;
     }
   }
